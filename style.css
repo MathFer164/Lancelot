@@ -18,6 +18,13 @@
     text-align: center;
     color: rgb(0, 0, 0);
     font-family: 'Tapestry', cursive;
+    background-image: linear-gradient(to bottom, red, orange);
+}
+
+#lancelot:hover {
+    color: red;
+
+
 }
 
 #parrafo {
