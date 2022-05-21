@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@500&family=Bebas+Neue&family=Roboto:ital,wght@1,300&family=Tapestry&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+/* Header y footer */
+.parrafo__1 {
+
+    font-family: 'Bebas Neue', cursive;
+}
+
+#lancelot {
+    font-size: 10rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Tapestry', cursive;
+}
+
+#parrafo {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    font-family: 'Caveat', cursive;
+}
+
+#header {
+    grid-area: header;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-family: 'Bebas Neue', cursive;
+    background-color: rgba(0, 0, 0, 0.308);
+    position: sticky;
+    top: 0px;
+    height: 4rem;
+
+
+}
+
+@media (max-width: 600px) {
+    * {
+        font-size: 1rem;
+    }
+
+    .secu {
+        flex-direction: column;
+    }
+
+    .eventos {
+        flex-direction: column;
+    }
+
+
+}
+
+.nav__links {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin: 2rem;
+
+}
+
+.footer {
+    grid-area: footer;
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas:
+        "nav redes aside"
+        "nav end aside";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-image: url(./assets/footer.png);
+}
+
+.footer__aside {
+    grid-area: aside;
+}
+
+.footer__nav {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    grid-area: nav;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.footer__nav__link {
+    text-decoration: none;
+    color: white;
+}
+
+.footer__redes {
+    text-align: center;
+    grid-area: redes;
+    border: 1px solid black;
+}
+
+.footer__end {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    grid-area: end;
+    border: 1px solid black;
+}
+
+html {
+    font-size: 100%;
+    background-color: rgb(177, 177, 179);
+    background-image: url(./assets/terraza.jpg);
+
+}
+
+/* Index */
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "principal"
+        "secu"
+        "footer";
+    grid-template-rows: 0.3fr 2fr 1fr 0.3fr;
+    height: 140vh;
+}
+
+
+
+.principal {
+    grid-area: principal;
+    border: 1px solid black;
+
+}
+
+/* Termina la seccion principal y empieza la secundaria */
+
+.secu {
+    display: flex;
+    grid-area: secu;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(./assets/hamburguesa.jpg);
+}
+
+.sub__1 {
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.secu__ubi {
+    width: 20rem;
+    background-color: rgba(235, 130, 130, 0.644);
+}
+
+.secu__new {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    background-color: rgba(235, 130, 130, 0.644);
+    height: 8rem;
+    width: 30rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+/* eventos */
+
+.eventos {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "servicio_1"
+        "servicio_2"
+        "footer";
+    grid-template-rows: 0.3fr 2fr 1fr 0.3fr;
+    height: 140vh;
+    background-color: rgba(235, 130, 130, 0.644);
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+.servicio__titulo {
+    font-size: 3rem;
+}
+
+.servicio__descripcion {
+    font-size: 2rem;
+}
+
+.servicio__1 {
+
+    grid-area: servicio_1;
+    display: flex;
+    justify-content: end;
+    font-size: 1.3rem;
+    flex-direction: row-reverse;
+    height: 20vh;
+    margin: rem;
+    background-color: rgba(255, 228, 196, 0.466);
+    height: 30vh;
+}
+
+.servicio__1__titulo {
+    margin: 2rem;
+    font-size: 3rem;
+}
+
+.servicio__2__titulo {
+    margin: 2rem;
+    font-size: 3rem;
+}
+
+.servicio__2 {
+    grid-area: servicio_2;
+    display: flex;
+    font-size: 1.3rem;
+    height: 20vh;
+    background-color: rgba(255, 228, 196, 0.466);
+    height: 30vh;
+}
